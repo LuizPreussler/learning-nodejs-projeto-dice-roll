@@ -1,0 +1,24 @@
+{
+  "name": "learning-nodejs-projeto-dice-roll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuizPreussler/learning-nodejs-projeto-dice-roll.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuizPreussler/learning-nodejs-projeto-dice-roll/issues"
+  },
+  "homepage": "https://github.com/LuizPreussler/learning-nodejs-projeto-dice-roll#readme",
+  "dependencies": {
+    "consign": "^0.1.6",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
