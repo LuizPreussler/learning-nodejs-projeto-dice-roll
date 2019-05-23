@@ -8,8 +8,6 @@ Responsável por:
 - pedir ao model para encerrar o jogo
 */
 
-
-
 var model = require('../models/Jogo');
 var jogoModel = undefined;
 
