@@ -1,5 +1,5 @@
 {
-  "name": "learning-nodejs-projeto-dice-roll",
+  "name": "learning-nodejs-projeto-jogar-dados",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LuizPreussler/learning-nodejs-projeto-dice-roll.git"
+    "url": "git+https://github.com/anfer86/learning-nodejs-projeto-jogar-dados.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LuizPreussler/learning-nodejs-projeto-dice-roll/issues"
+    "url": "https://github.com/anfer86/learning-nodejs-projeto-jogar-dados/issues"
   },
-  "homepage": "https://github.com/LuizPreussler/learning-nodejs-projeto-dice-roll#readme",
+  "homepage": "https://github.com/anfer86/learning-nodejs-projeto-jogar-dados#readme",
   "dependencies": {
     "consign": "^0.1.6",
     "ejs": "^2.6.1",
