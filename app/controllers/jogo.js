@@ -8,7 +8,7 @@ Responsável por:
 - pedir ao model para encerrar o jogo
 */
 
-var model = require('../models/Jogo');
+var model = require('../models/jogo');
 var jogoModel = undefined;
 
 module.exports.iniciar = function (application, req, res){
