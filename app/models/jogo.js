@@ -14,7 +14,7 @@ Jogo.prototype.novoJovo = function(){
 
 Jogo.prototype.lancarUmDado = function(){
 	var valorAleatorio = Math.random(); // No intervalo [0 e 1]
-	var lado = 1 + Math.round(valorAleatorio * (this.lados-1));
+	var lado = 1 + Math.floor(valorAleatorio * (this.lados));
 	return lado;
 }
 
@@ -27,7 +27,7 @@ Jogo.prototype.lancarDados = function(){
 	return lancamento;
 }
 
-Jogo.prototype.contarDados = function(){
+Jogo.prototype.contarDados = function(lancamento){
 	var contagem = Array(this.lados).fill(0);
 	for(var i = 0; i < lancamento.length; i++){
 		var numero = lancamento[i];
@@ -38,7 +38,7 @@ Jogo.prototype.contarDados = function(){
 
 jogo = new Jogo();
 lancamento = jogo.lancarDados();
-contagem = jogo.contarDados();
+contagem = jogo.contarDados(lancamento);
 console.log('Lados sorteados: ',lancamento);
 console.log('contagem: ',contagem)
 //console.log('Contagem: ', jogo.contarDados());
