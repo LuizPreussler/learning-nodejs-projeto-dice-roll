@@ -6,8 +6,8 @@ function Jogo(dados = 5, lados = 6){
 	this.n = 0;
 }
 
-Jogo.prototype.novoJovo = function(){
-	console.log('model: novoJovo');
+Jogo.prototype.novoJogo = function(){
+	console.log('model: novoJogo');
 	this.pontos = 0;
 	this.n = 0;
 }

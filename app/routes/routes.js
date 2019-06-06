@@ -16,12 +16,12 @@ module.exports = function(application){
     });
 
     application.get('/reiniciar', function(req,res){
-    	console.log('routes: /reiniciar');    	        
-    	res.send('Esta funcionalidade não foi implementada ainda.');
+    	console.log('routes: /reiniciar');
+        application.app.controllers.jogo.reiniciar(application, req, res);
     });
     
     application.get('/encerrar', function(req,res){
     	console.log('routes: /encerrar');        
-    	res.send('Esta funcionalidade não foi implementada ainda.');
+        application.app.controllers.jogo.encerrar(application, req, res);
     });
 }

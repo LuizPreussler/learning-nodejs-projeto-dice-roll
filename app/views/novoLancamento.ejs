@@ -2,28 +2,46 @@
 <html>
 <head>
 	<title>Projeto Jogar Dados</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">	
 </head>
 <body>
 	<main>
-		
-		<h1>Projeto Jogar Dados</h1>
+		<div class="container col-12 col-sm col-md-6 bg-light p-2 text-center">
+			<h1>Projeto Jogar Dados</h1>
 
-		<p>Pontuação acumulada: <%= pontosAcumulados %></p>
+			<div class="container">
 
-		<p>Número de lançamentos: <%= nLancamentos %> </p>
+				<div class="card-deck my-2">
 
-		<p>Lançamento: <%= lancamento %></p>
+					<div class="col-6 p-2">
 
-		<p>jogo Lançamento atual: <%= jogoLancamento %></p>
+						<div class="card">
 
-		<p>Pontuação Lançamento: <%= pontosLancamento %></p>
+							<div class="card-header">Pontuação acumulada</div>
+							<div class="card-body"><%= pontosAcumulados %></div>
 
-		<button type="button" id="buttonLancarDados">Lançar dados</button>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<p>Número de lançamentos: <%= nLancamentos %> </p>
+
+			<p>Lançamento: <%= lancamento %></p>
+
+			<p>jogo Lançamento atual: <%= jogoLancamento %></p>
+
+			<p>Pontuação Lançamento: <%= pontosLancamento %></p>
+
+			<button type="button" id="buttonLancarDados">Lançar dados</button>
+			<button type="button" id="buttonReiniciarJogo">Reiniciar</button>
+			<button type="button" id="buttonEncerraJogo">Encerrar</button>
+
+		</div>
 	</main>
 </body>
 
-<script type="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
 
 <script type="text/javascript">
 	$(document) . ready(function(){
@@ -32,6 +50,16 @@
 			function(){
 			location.href='lancarDados';
 		});
+
+		$("#buttonReiniciarJogo").click(
+			function(){
+			location.href='reiniciar';
+		});
+
+		$("#buttonEncerraJogo").click(
+			function(){
+				location.href='encerrar';
+			});
 	});
 </script>
 
