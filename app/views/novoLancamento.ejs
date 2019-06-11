@@ -13,7 +13,7 @@
 
 				<div class="card-deck my-2">
 
-					<div class="col-6 p-2">
+					<div class="col-6 p-4">
 
 						<div class="card">
 
@@ -22,21 +22,67 @@
 
 						</div>
 					</div>
+
+					<div class="col-6 p-4">
+
+						<div class="card">
+
+							<div class="card-header">Número de lançamentos</div>
+							<div class="card-body"><%= nLancamentos %></div>
+						</div>
+					</div>
+
+					<div class="col-12 p-3">
+
+						
+						<div class="card">
+							
+							<div class="card-header">Lançamento</div>
+							<div class="card-body">
+
+								<% for(var i=0; i < lancamento.length; i++){ %>
+									<img src="images/dado<%=lancamento[i]%>.png" class="p-2 col-3 col-sm-2">
+								<% } %>
+									
+							</div>
+						</div>
+					</div>
+
+					<div class="col-6 p-3">
+
+						<div class="card">
+							
+							<div class="card-header">jogo Lançamento atual</div>
+							<div class="card-body"><%= jogoLancamento %></div>
+						</div>
+					</div>
+
+					<div class="col-6 p-3">
+
+						<div class="card">
+							
+							<div class="card-header">Pontuação Lançamento</div>
+							<div class="card-body"><%= pontosLancamento %></div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 
-			<p>Número de lançamentos: <%= nLancamentos %> </p>
+			<div class="col-12 mx-auto mt-2 px-4">
 
-			<p>Lançamento: <%= lancamento %></p>
+				<button type="button" class="btn btn-success btn-block" id="buttonLancarDados">Lançar dados</button>
+			</div>
 
-			<p>jogo Lançamento atual: <%= jogoLancamento %></p>
+			<div class="col-6 mx-auto p-4">
 
-			<p>Pontuação Lançamento: <%= pontosLancamento %></p>
+				<button type="button" class="btn btn-warning btn-block" id="buttonReiniciarJogo">Reiniciar</button>
+			</div>
 
-			<button type="button" id="buttonLancarDados">Lançar dados</button>
-			<button type="button" id="buttonReiniciarJogo">Reiniciar</button>
-			<button type="button" id="buttonEncerraJogo">Encerrar</button>
+			<div class="col-6 mx-auto p-4">
 
+				<button type="button" class="btn btn-danger btn-block" id="buttonEncerraJogo">Encerrar</button>
+			</div>
 		</div>
 	</main>
 </body>
