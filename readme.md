@@ -1,6 +1,6 @@
-# Projeto tabuada
+# Projeto Dice-Roll
 
-Este é um projeto de ensino para Node.js. O obejetivo desse projeto é cirar um site para calcular a tabauda de um número fornecido por meio de um formulário.
+Este é um projeto de ensino para Node.js. O obejetivo desse projeto é cirar um site onde o usuário podera fazer jogadas de dado.
 
 ## Pré-requsitos
 
@@ -18,9 +18,9 @@ $ git --version
 
 Cloar o repositório do Github e usar o 'npm' do Node.js para instalar as depêndencias de módulos do projeto.
 ```bash
-$ git clone https://github.com/LuizPreussler/learning-nodejs-projeto-tabuada.git
+$ git clone https://github.com/LuizPreussler/learning-nodejs-projeto-dice-roll
 
-$ cd learning-nodejs-projeto-tabuada.git/
+$ cd learning-nodejs-projeto-dice-roll.git/
 
 $ npm install
 ```
@@ -32,7 +32,7 @@ Para rodar a aplicação executar:
 $ node app
 ``` 
 
-A aplicação está configurada para rodar na porta 3000. Para acessar a aplicação, entrar no endereço http://localhost:3000 . Para alterar o número da prota, editar o arquivo 'app.js'.
+A aplicação está configurada para rodar na porta 3000. Para acessar a aplicação, entrar no endereço http://localhost:3100 . Para alterar o número da prota, editar o arquivo 'app.js'.
 
 ## Desenvolvimento 
 
