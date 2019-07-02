@@ -28,6 +28,17 @@ module.exports.novoLancamento = function(application, req, res){
 	}
 }
 
+module.exports.adicionaDados = function(application, req, res){
+	console.log('controller: adicionaDados');
+	if (jogoModel){
+		console.log('controller: pede para o model adicionar mais dados');
+		jogoModel.adicionaDados();
+		console.log('controller: atualizar a view com os dados novos');
+		var resultado  = jogoModel.novoLancamento();
+		res.render('novoJogo');
+	}
+}
+
 module.exports.reiniciar = function(application, req, res){
 	console.log('controller: reiniciar');
 	if (jogoModel){

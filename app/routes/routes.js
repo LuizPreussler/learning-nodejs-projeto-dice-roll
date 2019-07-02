@@ -15,6 +15,11 @@ module.exports = function(application){
         application.app.controllers.jogo.novoLancamento(application, req, res);
     });
 
+    application.get('/add', function(req,res){
+        console.log('routes: /add');
+        application.app.controllers.jogo.adicionaDados(application, req, res);
+    });
+
     application.get('/reiniciar', function(req,res){
     	console.log('routes: /reiniciar');
         application.app.controllers.jogo.reiniciar(application, req, res);

@@ -6,6 +6,16 @@ function Jogo(dados = 5, lados = 6){
 	this.n = 0;
 }
 
+Jogo.prototype.adicionaDados = function(){
+	console.log('model: adicionaDados');
+	if (this.dados < 10){
+		this.dados++;
+	}
+	else {
+		console.log('model: numero maximo de dados');
+	}
+}
+
 Jogo.prototype.novoJogo = function(){
 	console.log('model: novoJogo');
 	this.pontos = 0;
@@ -71,7 +81,8 @@ Jogo.prototype.novoLancamento = function(){
 		nLancamentos : this.n,
 		lancamento : lancamento,
 		jogoLancamento : analisarLancamento.jogo,
-		pontosLancamento : analisarLancamento.pontos
+		pontosLancamento : analisarLancamento.pontos,
+		numeroDados : this.dados
 	};
 
 	return resultado;
