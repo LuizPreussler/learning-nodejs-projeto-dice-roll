@@ -8,8 +8,8 @@ function Jogo(dados = 5, lados = 6){
 
 Jogo.prototype.adicionaDados = function(){
 	console.log('model: adicionaDados');
-	if (this.dados < 10){
-		this.dados++;
+	if (Jogo.dados < 10){
+		Jogo.dados++;
 	}
 	else {
 		console.log('model: numero maximo de dados');
