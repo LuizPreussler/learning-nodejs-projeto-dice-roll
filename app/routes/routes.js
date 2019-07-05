@@ -4,20 +4,19 @@ module.exports = function(application){
         res.render('home');
     });
 
+    application.post('/iniciar', function(req,res){     
+        console.log('routes: /iniciar');
+        application.app.controllers.jogo.iniciar(application, req, res);    
+    });
+
     application.get('/iniciar', function(req,res){    	
-    	console.log('routes: /iniciar');
-        application.app.controllers.jogo.iniciar(application,req,res);
-        //res.send('Esta funcionalidade não foi implementada ainda.');
+        console.log('routes: /iniciar');
+        application.app.controllers.jogo.iniciar(application, req, res);
     });
 
     application.get('/lancarDados', function(req,res){
     	console.log('routes: /lancarDados');
         application.app.controllers.jogo.novoLancamento(application, req, res);
-    });
-
-    application.get('/add', function(req,res){
-        console.log('routes: /add');
-        application.app.controllers.jogo.adicionaDados(application, req, res);
     });
 
     application.get('/reiniciar', function(req,res){

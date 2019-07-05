@@ -1,19 +1,9 @@
-function Jogo(dados = 5, lados = 6){
+function Jogo(dados = 7, lados = 6){
 	console.log('model: executar contructor de jogo');
 	this.dados = dados;
 	this.lados = lados;
 	this.pontos = 0;
 	this.n = 0;
-}
-
-Jogo.prototype.adicionaDados = function(){
-	console.log('model: adicionaDados');
-	if (Jogo.dados < 10){
-		Jogo.dados++;
-	}
-	else {
-		console.log('model: numero maximo de dados');
-	}
 }
 
 Jogo.prototype.novoJogo = function(){
@@ -69,7 +59,7 @@ Jogo.prototype.analisarLancamento = function(lancamento){
 
 Jogo.prototype.novoLancamento = function(){
 	console.log('model: novoLancamento');
-	var lancamento = jogo.lancarDados();
+	var lancamento = this.lancarDados();
 	console.log('model: analisarLancamento');
 	var analisarLancamento = this.analisarLancamento(lancamento);
 	this.pontos += analisarLancamento.pontos;
@@ -81,14 +71,14 @@ Jogo.prototype.novoLancamento = function(){
 		nLancamentos : this.n,
 		lancamento : lancamento,
 		jogoLancamento : analisarLancamento.jogo,
-		pontosLancamento : analisarLancamento.pontos,
-		numeroDados : this.dados
+		pontosLancamento : analisarLancamento.pontos
 	};
 
 	return resultado;
 } 
+//var teste = require("../controllers/jogo.js");
 
-jogo = new Jogo();
+jogo = new Jogo(5);
 lancamento = jogo.lancarDados();
 contagem = jogo.contarDados(lancamento);
 resultado = jogo.analisarLancamento(lancamento);
